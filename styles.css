@@ -1,0 +1,223 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 30px 0;
+    font-size: 3em;
+    color: #34495e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#participants {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.participant {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    font-size: 1em;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.participant:hover {
+    transform: translateY(-5px);
+}
+
+.participant h3 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 10px;
+    margin: 5px 5px 5px 0;
+    border: 2px solid #2980b9;
+    border-radius: 6px;
+    font-size: 1em;
+    text-align: center;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 15px 30px;
+    margin-top: 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #d35400;
+    transform: translateY(-3px);
+}
+
+#results {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#results h2 {
+    color: #34495e;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#results p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 12px;
+    background-color: #fff;
+    border-left: 6px solid #3498db;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #34495e;
+}
+
+.participant {
+    margin-bottom: 20px;
+}
+
+.participant h3 {
+    color: #34495e;
+}
+
+.participant input[type="text"],
+.participant input[type="number"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    width: 180px;
+    font-size: 1em;
+}
+
+#participants {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#results p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 12px;
+    background-color: #fff;
+    border-left: 6px solid #3498db; /* Default border color */
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p.gold {
+    border-color: #f1c40f; /* Gold border for 1st place */
+    background-color: #fff9c4; /* Light yellow background */
+    color: #f39c12; /* Text color */
+}
+
+p.silver {
+    border-color: #bdc3c7; /* Silver border for 2nd place */
+    background-color: #ecf0f1; /* Light grey background */
+    color: #95a5a6; /* Text color */
+}
+
+p.bronze {
+    border-color: #e67e22; /* Bronze border for 3rd place */
+    background-color: #f5e0d3; /* Light orange background */
+    color: #d35400; /* Text color */
+}
+
+button {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #participants {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
